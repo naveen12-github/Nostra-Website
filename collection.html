@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <h1>Nostra</h1>
+        <div class="navbar_icons">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="#">New Arrival</a></p>
+            <p class="navbar-link"><a href="#">Most Wanted</a></p>
+            <p class="navbar-link"><a href="#">Collection</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact Us</a></p>
+        </div>
+        <div class="navbar-menu" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <!-- side navbar -->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closenavbar()">
+            <i id="x" class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="#">New Arrival</a></p>
+            <p class="side-navbar-link"><a href="#">Most Wanted</a></p>
+            <p class="side-navbar-link"><a href="#">Collection</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact Us</a></p>
+        </div>
+    </div>
+    <!-- offer -->
+    <div class="offer">
+        <p>Flash Sale: Get a Flat 60% Off Everything! Don’t Miss Out!</p>
+        <i class="fa-solid fa-xmark" onclick="closeoffer()"></i>
+    </div>
+    <!-- product container -->
+    <div class="container">
+        <!-- Left Column -->
+        <div class="left-column">
+            <div class="checkbox-group">
+                <h1>Occasion</h1>
+                <label  style="font-size: 20px;"><input type="checkbox" id="l1"> Party Wear</label><br>
+                <label  style="font-size: 20px;"><input type="checkbox" id="l1"> Casual Wear</label><br>
+                <label  style="font-size: 20px;"><input type="checkbox" id="l1"> Formal Wear</label>
+            </div>
+            <div class="checkbox-group">
+                <h1>Colors</h1>
+                <label  style="font-size: 20px;"><input type="checkbox" id="l1"> Red</label><br>
+                <label  style="font-size: 20px;"><input type="checkbox" id="l1"> Blue</label><br>
+                <label  style="font-size: 20px;"><input type="checkbox" id="l1"> White</label><br>
+                <label  style="font-size: 20px;"><input type="checkbox" id="l1"> Green</label>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+            <!-- Search Section -->
+            <div class="search-section">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <!-- Images Grid -->
+            <div class="images-container">
+                <div class="images-row">
+                    <div>
+                        <img src="./images/s1.jfif" alt="Image 1">
+                        <h3> Party Wear Green</h3>
+                    </div>
+                    <div>
+                        <img src="./images/pw2.jfif" alt="Image 1">
+                        <h3> Party Wear Blue</h3>
+                    </div>
+                    <div>
+                        <img src="./images/pw3.jfif" alt="Image 1">
+                        <h3> Party Wear White</h3>
+                    </div>
+                    <div>
+                        <img src="./images/pw4.jfif" alt="Image 1">
+                        <h3> Party Wear Red</h3>
+                    </div>
+                </div>
+                <div class="images-row">
+                    <div>
+                        <img src="./images/cs1.jfif" alt="Image 1">
+                        <h3> Casual Wear Red</h3>
+                    </div>
+                    <div>
+                        <img src="./images/cs4.jfif" alt="Image 12">
+                        <h3> Casual Wear Blue</h3>
+                    </div>
+                    <div>
+                        <img src="./images/cs3.jfif" alt="Image 3">
+                        <h3> Casual Wear White</h3>
+                    </div>
+                    <div>
+                        <img src="./images/cs2.jfif" alt="Image 4">
+                        <h3> Casual Wear Green</h3>
+                    </div>
+                </div>
+                </div>
+                <div class="images-row">
+                    <div>
+                        <img src="./images/fw1.jfif" alt="Image 1">
+                        <h3> Formal Wear White</h3>
+                    </div>
+                    <div>
+                        <img src="./images/fw2.jfif" alt="Image 12">
+                        <h3> Formal Wear Blue</h3>
+                    </div>
+                    <div>
+                        <img src="./images/fw3.jfif" alt="Image 3">
+                        <h3> Formal Wear Green</h3>
+                    </div>
+                    <div>
+                        <img src="./images/fw4.jfif" alt="Image 4">
+                        <h3> Formal Wear Red</h3>
+                    </div>
+                </div>
+                <div class="images-row">
+                    <div>
+                        <img src="./images/p1.jfif" alt="Image 1">
+                        <h3>Casual Wear Red</h3>
+                    </div>
+                    <div>
+                        <img src="./images/p2.jfif" alt="Image 12">
+                        <h3> Casual Wear Blue</h3>
+                    </div>
+                    <div>
+                        <img src="./images/p3.jfif" alt="Image 3">
+                        <h3>Casual Wear White</h3>
+                    </div>
+                    <div>
+                        <img src="./images/p4.jfif" alt="Image 4">
+                        <h3>Casual Wear Green</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+        <h1>Nostra</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi tempore magnam nostrum modi tenetur aperiam? Mollitia pariatur neque ullam sunt explicabo voluptatem sint architecto similique nihil error aut, libero illum.</p>
+      </div>
+      <div class="footericons">
+        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+      </div>
+      <div>
+        <p class="subtitle">&copy; 2023 Nostra.com</p>
+      </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
